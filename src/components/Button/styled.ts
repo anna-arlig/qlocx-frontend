@@ -6,16 +6,19 @@ export const ButtonContainer = styled.input.attrs({
   value: 'Logga in'
 })`
   background-color: ${colors.primary.medium_green};
+  border-color: ${colors.primary.medium_green};
   color: ${colors.primary.dark_green};
-  width: 382px;
+  border-style: solid;
+  width: 387px;
   border-radius: 5px;
-  border-color: transparent;
-  height: 50px;
+  height: 54px;
   text-align: center;
   font-family: 'Avenir', sans-serif; 
   font-size: 20px;
+  margin-top: 50px;
   &:hover {
     background-color: ${colors.primary.dark_green_opacity};
+    border-color: ${colors.primary.dark_green_opacity};
     color: ${colors.primary.white};
   }
 `;
