@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "types": [
+      "@types/styled-components-react-native"
+    ],
     "target": "es5",
     "lib": [
       "dom",
