@@ -1,12 +1,12 @@
-import { Logo } from "../../constants/typography";
-import { HeaderContainer } from "./styled";
+import { Logo } from '../../constants/typography'
+import { HeaderContainer } from './styled'
 
-function Header() {
+const Header = () => {
   return (
     <HeaderContainer>
       <Logo>Qlocx</Logo>
     </HeaderContainer>
-  );
+  )
 }
 
-export default Header;
+export default Header

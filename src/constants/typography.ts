@@ -5,6 +5,7 @@ import colors from '../constants/colors';
 export const Logo = styled.h1`
   margin: 0;
   padding: 10px;
+  padding-left: 50px;
   font-size: 64px;
   color: ${colors.primary.dark_green};
   font-family: 'Avenir', sans-serif;                                               

@@ -1,6 +1,6 @@
-import Header from "./components/Header/Header";
-import GlobalStyle from "./GlobalStyle";
-import LoginPage from "./views/LoginPage/LoginPage";
+import Header from './components/Header/Header'
+import GlobalStyle from './GlobalStyle'
+import LoginPage from './views/LoginPage/LoginPage'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <LoginPage />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

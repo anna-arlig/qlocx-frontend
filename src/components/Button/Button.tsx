@@ -1,7 +1,7 @@
-import { ButtonContainer } from "./styled";
+import { ButtonContainer } from './styled'
 
-function Button() {
-  return <ButtonContainer></ButtonContainer>;
+const Button = () => {
+  return <ButtonContainer></ButtonContainer>
 }
 
-export default Button;
+export default Button
