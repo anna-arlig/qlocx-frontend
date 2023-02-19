@@ -1,12 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from 'react-router-dom'
+import Header from './components/Header/Header'
+import GlobalStyle from './GlobalStyle'
+
 import reportWebVitals from './reportWebVitals'
+import LoginView from './views/LoginView/LoginView'
+import UserView from './views/UserView/UserView'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<LoginView />}>
+      <Route path="user" element={<UserView />} />
+    </Route>
+  )
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle />
+    <Header />
+    <RouterProvider router={router} />
   </React.StrictMode>
 )
 

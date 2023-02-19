@@ -1,13 +1,11 @@
 import Header from './components/Header/Header'
 import GlobalStyle from './GlobalStyle'
-import LoginView from './views/LoginView/LoginView'
-
+import { BrowserRouter, Routes } from 'react-router-dom'
 const App = () => {
   return (
     <>
       <GlobalStyle />
       <Header />
-      <LoginView />
     </>
   )
 }

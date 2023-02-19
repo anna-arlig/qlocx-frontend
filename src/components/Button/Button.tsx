@@ -1,7 +1,12 @@
+import { Body } from '../../constants/typography'
 import { ButtonContainer } from './styled'
 
 const Button = () => {
-  return <ButtonContainer></ButtonContainer>
+  return (
+    <ButtonContainer>
+      <Body>Logga in</Body>
+    </ButtonContainer>
+  )
 }
 
 export default Button
