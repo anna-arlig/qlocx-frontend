@@ -2,7 +2,7 @@ import Button from '../../components/Button/Button'
 import Input from '../../components/Input/Input'
 import { LoginContainer } from './styled'
 
-function LoginPage() {
+const LoginView = () => {
   return (
     <LoginContainer>
       <Input type={'text'} placeholder={'Användarnamn'} />
@@ -12,4 +12,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage
+export default LoginView

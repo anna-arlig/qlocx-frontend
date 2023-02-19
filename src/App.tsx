@@ -1,13 +1,13 @@
 import Header from './components/Header/Header'
 import GlobalStyle from './GlobalStyle'
-import LoginPage from './views/LoginPage/LoginPage'
+import LoginView from './views/LoginView/LoginView'
 
-function App() {
+const App = () => {
   return (
     <>
       <GlobalStyle />
       <Header />
-      <LoginPage />
+      <LoginView />
     </>
   )
 }
