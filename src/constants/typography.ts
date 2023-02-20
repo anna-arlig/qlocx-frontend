@@ -13,6 +13,7 @@ export const Logo = styled.h1`
 
 export const WelcomeText = styled.h2`
   margin: 0;
+  padding-bottom: 40px;
   font-size: 24px;
   color: ${colors.primary.dark_green};
   font-family: 'Avenir', sans-serif;                                               
@@ -20,7 +21,16 @@ export const WelcomeText = styled.h2`
 
 export const Body = styled.p`
   margin: 0;
+  padding: 5px;
   font-size: 16px;
   color: ${colors.primary.dark_green};
+  font-family: 'Avenir', sans-serif;                                               
+`;
+
+export const ErrorText = styled.p`
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: ${colors.primary.error_red};
   font-family: 'Avenir', sans-serif;                                               
 `;
