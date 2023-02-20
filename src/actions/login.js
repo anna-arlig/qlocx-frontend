@@ -1,5 +1,6 @@
 import { redirect } from "react-router-dom"
 import axios from "axios"
+import jwt from 'jwt-decode'
 
 axios.defaults.baseURL = 'http://localhost:3030/api/user'
 
@@ -18,7 +19,8 @@ export const loginAction = async ({request}) => {
       })
     const token = response.data.token
     axios.defaults.headers.common["Authorization"] = `Bearer ${token}`
-    const foundUser = await axios.get('/find/1337')
+    const tokenId = jwt(token)
+    const foundUser = await axios.get(`/find/${tokenId.id}`)
     userInfo = foundUser.data
     userLoader()
     return redirect('user')
@@ -30,8 +32,6 @@ export const loginAction = async ({request}) => {
 
   }
 }
-
-
 
 export const userLoader = () => {
   return userInfo
