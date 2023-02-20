@@ -6,9 +6,9 @@ import { LoginContainer } from './styled'
 const LoginView = () => {
   return (
     <LoginContainer>
-      <Form method="post" action="/user">
-        <Input type={'text'} placeholder={'Användarnamn'} />
-        <Input type={'password'} placeholder={'Lösenord'} />
+      <Form method="post" action="/" style={{ display: 'Flex', flexDirection: 'column' }}>
+        <Input type={'email'} placeholder={'E-post'} name={'email'} />
+        <Input type={'password'} placeholder={'Lösenord'} name={'password'} />
         <Button />
       </Form>
     </LoginContainer>

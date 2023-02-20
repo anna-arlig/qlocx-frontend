@@ -8,16 +8,17 @@ import {
 } from 'react-router-dom'
 import Header from './components/Header/Header'
 import GlobalStyle from './GlobalStyle'
-
+import { loginAction } from './actions/login'
 import reportWebVitals from './reportWebVitals'
 import LoginView from './views/LoginView/LoginView'
 import UserView from './views/UserView/UserView'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<LoginView />}>
+    <>
+      <Route index path="/" element={<LoginView />} action={loginAction} />
       <Route path="user" element={<UserView />} />
-    </Route>
+    </>
   )
 )
 

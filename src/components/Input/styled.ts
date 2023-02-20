@@ -4,11 +4,13 @@ import colors from '../../constants/colors';
 type Props = {
   type: string;
   placeholder: string;
+  name: string
 };
 
 export const InputContainer = styled.input.attrs<Props>(props => ({ 
   type: props.type,
-  placeholder: props.placeholder
+  placeholder: props.placeholder,
+  name: props.name
 }))`
   background-color: ${colors.primary.white};
   color: ${colors.primary.dark_green};
