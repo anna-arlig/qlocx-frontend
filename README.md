@@ -1,5 +1,4 @@
-# Kodtest för Qlocx - backend
-
+# Kodtest för Qlocx - frontend
 ## Instruktioner
 
 Bygg en tjänst med 2 vyer (frontend) och 2 rutter (backend).
