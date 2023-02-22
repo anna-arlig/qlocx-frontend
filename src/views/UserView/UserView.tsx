@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom'
-import { Body, WelcomeText } from '../../constants/typography'
-import { UserContainer } from './styled'
+import { Body } from '../../constants/typography'
+import { UserContainer, WelcomeText } from './styled'
 
 type User = {
   email: string

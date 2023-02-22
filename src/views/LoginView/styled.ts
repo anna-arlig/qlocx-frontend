@@ -1,3 +1,4 @@
+import { Form } from 'react-router-dom';
 import styled from 'styled-components'
 
 export const LoginContainer = styled.div`
@@ -7,3 +8,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `;
+
+
+export const StyledForm = styled(Form)`
+display: flex;
+flex-direction: column;
+`
