@@ -42,7 +42,7 @@ Design finns att se i Figma: https://www.figma.com/file/Si1kruBWURAA2eNNnm2oeZ/Q
 För att starta:
 
 1. Klona repot med `git clone` och använd antingen SSH eller HTTP.
-2. Gå in i roten av projektet och kör `npm install`.
+2. Navigera in i roten av projektet och kör `npm install`.
 3. Kör `npm start`.
 
 Se till att ha startat backenden som finns i separat repo: [https://github.com/anna-arlig/qlocx-backend/
