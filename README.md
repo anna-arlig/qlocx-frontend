@@ -49,6 +49,6 @@ Se till att ha startat backenden som finns i separat repo: [https://github.com/a
 ](https://github.com/anna-arlig/qlocx-backend)
 ## Giltiga inloggningsuppgifter:
 
-Email: anna.arlig@gmail.com
+Epost: anna.arlig@gmail.com
 
-Password: Qlocx2016
+Lösenord: Qlocx2016
