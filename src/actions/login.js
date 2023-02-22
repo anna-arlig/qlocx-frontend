@@ -1,8 +1,7 @@
 import { redirect } from "react-router-dom"
-import axios from "axios"
-import jwt from 'jwt-decode'
-
-axios.defaults.baseURL = 'http://localhost:3030/api/user'
+import { userApi } from "../utils/api"
+import { setAuthHeader} from "../utils/api"
+import { parseToken } from '../utils/token'
 
 let userInfo
 
@@ -12,24 +11,20 @@ export const loginAction = async ({request}) => {
   const password = data.get('password')
 
   try{
-    const response = await axios
-      .post("/auth/", {
-        email,
-        password,
-      })
-    const token = response.data.token
-    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`
-    const tokenId = jwt(token)
-    const foundUser = await axios.get(`/find/${tokenId.id}`)
+    const response = await userApi.auth({
+      email,
+      password,
+    })
+    setAuthHeader(response.data.token)
+    const tokenId = parseToken(response.data.token)
+    const foundUser = await userApi.getUserById(tokenId)
     userInfo = foundUser.data
-    userLoader()
     return redirect('user')
   }
-  catch { 
-    const error = 'Ogiltiga inloggningsuppgifter'
-    console.log('403 - Unauthorized')
-    return error
-
+  
+  catch(error) { 
+    console.log(error)
+    return error.response.data
   }
 }
 
