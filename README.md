@@ -46,8 +46,8 @@ För att starta:
 2. Gå in i roten av projektet och kör `npm install`.
 3. Kör `npm start`.
 
-Se till att ha startat backenden som finns i separat repo: [https://github.com/anna-arlig/qlocx-backend/blob/main/README.md](https://github.com/anna-arlig/qlocx-backend)
-
+Se till att ha startat backenden som finns i separat repo: [https://github.com/anna-arlig/qlocx-backend/
+](https://github.com/anna-arlig/qlocx-backend)
 ## Giltiga inloggningsuppgifter:
 
 Email: anna.arlig@gmail.com
