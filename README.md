@@ -38,3 +38,14 @@ Inkludera gärna dokumentation för hur en annan utvecklare ska kunna starta den
 ## Design
 
 Design finns att se i Figma: https://www.figma.com/file/Si1kruBWURAA2eNNnm2oeZ/Qlocx?node-id=0%3A1&t=dKX1z5V7g2XBjK8U-1
+
+
+## Test
+
+För att testa appen, klona repot, kör "npm install" och sedan "npm start". Se till att ha startat backenden som finns i separat repo: https://github.com/anna-arlig/qlocx-backend/blob/main/README.md
+
+Giltiga inloggningsuppgifter:
+
+Email: anna.arlig@gmail.com
+
+Password: Qlocx2016
